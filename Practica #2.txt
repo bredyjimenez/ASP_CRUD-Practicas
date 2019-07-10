@@ -1,0 +1,78 @@
+﻿Practica #2
+ponerle los nombres que les pido a cada cosa, pues de lo contrario no le aceptare su practica
+1)-Crear una base de datos llamada SQL_CRUD
+2)-Crear una tabla que se llame empleados en la base de datos llamada CRUD con los siguientes campos
+***id int que se autoincremente llave primaria
+***nombre varchar de 40 not null
+***apellido varchar de 40 not null
+***cedula char de 11 que sea unica not null
+***telefono char de 10 not null
+***direccion varchar de 100 not null
+***Genero char 1 not null 
+masculino 	---> M 
+femenino	---> F
+***fecha_nacimiento date not null
+***condicion char 1 not null 
+activo 		---> A 
+de vacaciones  	---> V
+suspendido  	---> S
+de licencia  	---> L
+***fecha_entrada date not null
+***fecha_salida date
+3)-Crear un procedimiento almacenado llamado pa_crud para el insert, update y el delete (no usar select en el procedimiento almacenado)
+4)-Crear un Proyecto que se llame ASP_CRUD
+
+
+5)-Agregar un formulario que se llame frm_empleado
+6)-poner un panel llamado p_busqueda para la busqueda
+agregarle un Textbox llamado txt_nombre_busqueda
+agregarle un Textbox llamado txt_cedula_busqueda 
+agregarle un boton llamado btn_buscar
+agregarle un boton llamado btn_nuevo
+poner el buton de buscar por defaul en el panel p_busqueda
+agregarle un GridView llamado gv_empleado con todos los resultados de la consulta
+el GridView debe tener un LinkButton que al darle click cambie al panel p_cambio y llene todos los controles con la informacion selecionada
+el GridView debe tener un Button que diga eliminar que al darle click borre este registro de la base de datos y luego muestre un mesaje que se borro correctamente
+cada uno con sus respectivos label. los label pueden estar con el nombre por default. ademas tienen que estar asociados por el AssociatedControlId
+7)-poner un panel llamado p_cambio para lo todo lo demas
+agregarle un boton llamado btn_guardar
+agregarle un boton llamado btn_cancelar
+un Textbox llamado txt_id 
+un Textbox llamado txt_nombre
+un Textbox llamado txt_apellido
+un Textbox llamado txt_cedula
+un Textbox llamado txt_telefono
+un Textbox llamado txt_direccion
+un Dropdownlist llamado ddl_Genero (deben de agregarles los listitem seleccionar, masculino y femenino )
+un Textbox llamado txt_fecha_nacimiento
+un Dropdownlist llamado ddl_condicion (deben de agregarles los listitem seleccionar, activo, de vacaciones, suspendido y de licencia)
+un Textbox llamado txt_fecha_entrada
+un Textbox llamado txt_fecha_salida
+cada uno con sus respectivos label. los label pueden estar con el nombre por default. ademas tienen que estar asociados por el AssociatedControlId
+8)-Agregar el datepicker jquery a todos los Textbox que sean para escribir fechas
+9)-Agregar al webconfig la cadena de conexion que vamos a usar
+10)-Agregar una clase que se llame conexion
+11)-Crear un metodo llamado select para hacer consultar usando Sentencias SQL
+12)-Crear un metodo llamado cambios para insertar, modificar y eliminar usando Procedimientos almacenados
+13)-Usar en los metodos anteriores la cadena de conexion del archivo webconfig
+
+
+14)-Validaciones
+al insertar
+usar la funcion que quitar los espacios en el nombre y el apellido
+usar la funcion de validar la cedula
+validar que esa cedula no exista en la base de datos
+validar que el telefono tengo 10 digitos ni mas ni menos
+validar que la direccion no este vacia
+validar que en el ddl_Genero no este seleccionado el  listitem seleccionar
+validar que la fecha de nacimiento sea valida y que la persona sea mayor de edad. usar la funcion de calcular la edad
+la condicion siempre sera activo en el insert
+validar que la fecha de entrada sea valida y que no sea mayor a la fecha actual
+la fecha de salida no se pondra en el insert solo en el update
+al modificar
+validar que en el ddl_condicion no este seleccionado el  listitem seleccionar
+validar que si esta seleccionado suspendido debe de modificar la fecha de salida y de lo contrario dejarlo en nulo en la base de datos
+validar que la fecha de salida sea valida y que no sea mayor a la fecha actual(solo se pondra esta fecha si el empleado es suspendido)
+
+aqui les dejo esta bobería
+

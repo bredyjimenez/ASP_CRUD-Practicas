@@ -1,0 +1,18 @@
+﻿Practica #3
+ponerle los nombres que les pido a cada cosa, pues de lo contrario no le aceptare su practica
+1)-Crear una tabla que se llame nacionalidades en la base de datos llamada SQL_CRUD con los siguientes campos
+***id int que se autoincremente llave primaria
+***nombre varchar de 40 que sea unica not null
+***estado bit not null
+2)-Agregar el campo id_nacionalidad int not null a la tabla de empleados
+3)-Agregar el foreign key o llave forÃ¡nea a la tabla de empleados
+4)-Crear un procedimiento almacenado llamado pa_nacionalidad para el crud(o sea create, select, update and delete)
+
+5)-Agregar un formulario que se llame frm_nacionalidad y hacer un crud
+6)-Agregarle al panel llamado p_busqueda 
+un Dropdownlist llamado ddl_nacionalidad_busqueda (deben de agregarles el listitem Todo y todos los registros que estan en la tabla nacionalidades que esten activos en el estado)
+7)-Agregarle estos campos a la busqueda anterior que solo buscaba por nombre y cedula
+8)-agregarle al panel llamado p_cambio 
+un Dropdownlist llamado ddl_nacionalidad (deben de agregarles el listitem seleccionar y todos los registros que estan en la tabla nacionalidades que esten activos en el estado)
+
+aqui les dejo esta miniboberÃ­a para que se lo agreguen a la boberÃ­a anterior
